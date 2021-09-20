@@ -87,6 +87,7 @@ h6 {
 	font-weight: inherit;
 }
 .slide-container {
+	margin: 50px auto;
 	width: 800px;
 	height: 400px;
 	position: relative;
