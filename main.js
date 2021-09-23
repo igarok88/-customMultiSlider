@@ -2,9 +2,18 @@ window.addEventListener("DOMContentLoaded", () => {
 	let slideContainers = document.querySelectorAll(".slide-container");
 
 	slideContainers.forEach((slideContainer) => {
-		// setInterval(() => {
-		// 	plusSlides(1);
-		// }, 1500);
+		if (slideContainers[0] == slideContainer) {
+			setInterval(() => {
+				plusSlides(1);
+			}, 2500);
+		}
+
+		if (slideContainers[1] == slideContainer) {
+			setInterval(() => {
+				plusSlides(-1);
+			}, 2500);
+		}
+
 		console.log(slideContainers[0]);
 		let div = document.createElement("div");
 		div.classList.add("dots-block");
